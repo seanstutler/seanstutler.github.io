@@ -35,11 +35,6 @@ img {
 	margin-right: auto;
 }
 
-/* change the color of the a tag when you hover over it */
-a:hover {
-	color: red;
-}
-
 img:hover {
     transform: scale(1.2, 1.2);
     -ms-transform: scale(1.2, 1.2);
