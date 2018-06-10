@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-image: url("http://i1.hdslb.com/bfs/archive/6748b1a2cd6db16d9493f5a0b4bd4796536d370a.jpg");
+    text-align: center;
+    background-size: 100%;
+    font-family: Roboto;
+}
+
+main {
+    display: flex;
+}
+
+#left, #right {
+    display: flex;
+    flex-basis: 50%;
+}
+
+button {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#right {
+    align-items: center;
+}
+
+#left {
+    height: 800px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+button {
+    border: 2px solid red;
+}
+
+textarea {
+    font-size: 15pt;
+    opacity: 0.5;
+    width: 500px;
+    height: 200px;
+}
