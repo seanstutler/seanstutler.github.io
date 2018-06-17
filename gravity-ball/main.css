@@ -4,12 +4,14 @@ body, button {
 }
 
 .ball {
-	display: absolute;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid black;
 }
 
 #container {
     margin: auto auto;
-    display: relative;
+    position: relative;
     border: 2px solid black;
     height: 500px;
     width: 1000px;

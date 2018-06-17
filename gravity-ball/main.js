@@ -6,9 +6,17 @@
     }
 
     function reset() {
+        let radius = 20; // the radius for the ball => TODO add a user input for the ball
+        $("container").innerHTML = "";
         let ball = gen("div");
         ball.id = "ball";
         ball.classList.add("ball");
+        ball.style.height = radius + "px";
+        ball.style.width = radius + "px";
+        let containerHeight = parseInt(window.getComputedStyle($("container")).height);
+        ball.style.top = containerHeight - radius - 2 + "px";
+        ball.style.left = "0px";
+        $("container").appendChild(ball);
     }
 
 
