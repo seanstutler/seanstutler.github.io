@@ -2,6 +2,11 @@ body, button {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.ball {
+	display: absolute;
+}
+
 #container {
     margin: auto auto;
     display: relative;
