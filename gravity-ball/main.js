@@ -1,7 +1,7 @@
 "use strict";
 (function() {
     const G = 9.81;
-    const SPEED = 400;
+    const SPEED = 50;
     let timer;
     let xspeed;
     let yspeed;
@@ -22,8 +22,10 @@
 
     function update() {
         let ball = $("ball");
-        ball.style.left = parseFloat(ball.style.left) + xspeed * (1 / REFRESH) + "px";
-        ball.style.top = parseFloat(ball.style.top) - (yspeed - G * 1 / REFRESH) * (1 / REFRESH) + "px";
+        ball.style.left = parseFloat(ball.style.left) + xspeed * 1 / REFRESH + "px";
+        let change_in_y = yspeed * (1 / REFRESH) - 1 / 2 * G * (1 / REFRESH) * (1 / REFRESH);
+        yspeed = yspeed - G * (1 / REFRESH);
+        ball.style.top = parseFloat(ball.style.top) - change_in_y + "px";
     }
 
     function reset() {
